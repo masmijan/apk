@@ -1,82 +1,48 @@
 @charset "utf-8";
 /* CSS Document */
 
-h1,h3,ul,body { margin: 0px; padding: 0px;}
+h1,h2,h3,ul,body { margin: 0px; padding: 0px;}
 body,html {
-	font-family: Sans, Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #000;
-widht: 100%;
+	font-family: Sans, Open Sans, Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000 !important;
+padding:4px;
 }
 
-h2 { padding-bottom: 5px;     padding-top: 5px;     font-size: 22px;     margin-bottom: 10px;     text-align: center;  background-color: #C9FF6A;
- border-style: solid;     border-bottom: double #666;     border-top: double;
-  border-left: 0px;  border-right: 0px;  border-center: 0px;     border-radius: 0px;         font-family: "sans;georgia;arial" }
-
-@font-face {
-    font-family: KFGQPC Uthman Taha Naskh Bold;
-    src: url("font.ttf")
-}
-
- img.menu {
-  display:none;
- 	}
-
-img.ic{
-	float:right;
-    margin-top: 17px;
-	margin-left: 10px;
-	margin-right: 17px;
-	height: 17px;
-	width: 4px;}
 
 a, a:link, a:active, a:visited {
 	text-decoration: none;
 	color: #000;
 	font-weight: bold;
 }
-ul { list-style: none; }
+ul { font-size: 17px; list-style: none; }
 h3 a:link, h3 a:active, h3 a:visited,h3 a {
 	/*warna tulisan di baris menu*/
 	color: #000;
 	display: block;
 }
 #header h2 a:link, #header h2 a:active, #header h2 a:visited, #header h2 a {
-
+	display:block;
 	color: #fff;
 }
 
 h1 { margin-bottom: 15px; }
 img {max-width: 100%}
 #header {
-	width: 100%;
-
-	
-	/*warna di header begronnya*/
-	background-color: #F9BE9B;
-
-	margin: 0px;
-	padding: 0px;
-		 
+	display:none;
 }
-
 #headbox {
-	text-align: center;
-	margin: 0px;
-
+	display:none;
 }
-
-#headbox h2 { color: #000; text-align:center; padding-top: 4px; padding-bottom: 4px; }
-
+#headbox h2 { color: #fff; padding-top: 4px; }
 #footer {
-display:none;
+	display:none;
 }
 #footerbox {
 	display:none;
 }
 #footerbox p {
-	color: #666;
-	text-align: center;
+display:none;
 
 }
 .logo{
@@ -97,26 +63,27 @@ display:none;
 	background-position: right center;
 	border-bottom-width: 3px;
 	border-bottom-style: solid;
-	border-bottom-color: #400000;
-	border-left-color: #D59855;
+	border-bottom-color: #000;
+	border-left-color: #000;
 	height: 32px;
 	border-left-width: 5px;
 	border-left-style: solid;
 	/*warna hijau di kotak menu*/
-	background-color: #D59855;
+	background-color: #E7D5AB;
 	/*gambar di ujung sebelah kiri di kotak menu*/
-	background-image:none;
+	background-image:url(images/arrkow.png);
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 3px;
 	margin-left: 0px;
 }
 @media only screen and (min-width: 500px) {
-  #homemenu li { float: left; width: 100%; }
+  #homemenu li { font-size: 17px; float: left; width: 100%; }
 }
 .homemenu li{
 	display:block;
 	height: 32px;
+	font-size: 17px;
 }
 .imgthumb {
 	margin-bottom: 6px;
@@ -126,7 +93,8 @@ display:none;
 }
 #home {
 	padding: 5px;
-
+    font-family: Sans, Open Sans, Arial, Helvetica, sans-serif;
+    font-size: 17px;
 }
 #home h2{
 	background-color: #000;
@@ -139,19 +107,49 @@ display:none;
 	color: #333;
 }
 
+#simple {
+    margin: 0;
+    padding: 0;
+
+}
+
+#simple li {
+    background: #C1DFB8;
+    border-bottom: 7px solid #fff;
+    list-style: none;
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+#simple li:hover {
+    background: #808080;
+}
+
+#simple li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+
+
+
 #single {
 	padding: 5px;
-	font-family: KFGQPC Uthman Taha Naskh Bold;
+	font-family: Sans, Open Sans, Arial, Helvetica, sans-serif;
+        font-size: 17px;
+    	background-color: #fff;
+    	color: #000 !important;
 }
 
 #isi {
 	padding:5px;
+	font-family: Sans, Open Sans, Arial, Helvetica, sans-serif;
+    font-size: 17px;
 	background-color: #fff;
-	border: 1px solid #fff;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 3px;
-	margin-left: 0px;
+	color: #000 !important;
+
 }
 #isi h2{
 	padding: 5px;
@@ -172,9 +170,11 @@ display:none;
 	margin-bottom: 5px;
 	margin-left: auto;
 }
+
 .alignleft{
 	float: left; margin-right: 4px;
 }
+
 .alignright{	float: right;margin-left: 4px}
 
 .kardus{
@@ -186,44 +186,15 @@ display:none;
 	margin-left: auto;
 	clear: both;
 }
+
 .navigasi{
-	text-align:center;
-	width:100%;
-	margin-top: 10px;
-	margin-right: auto;
-	margin-bottom: 10px;
-	margin-left: auto;
-	clear: both;
-}
-p{text-align:justify;margin:0;padding:0 0 10px}
-.desc{	font-size: 11px;}
-
-
-#simple {
-    margin: 0;
-    padding: 0;
-
+	display:none;
 }
 
-#simple li {
-    background: #F9BE9B;
-    border-bottom: 7px solid #fff;
-    list-style: none;
-    padding: 0.5em;
-    text-align: center;
-
-}
-/*backgrund link ketika di klik*/
-#simple li:hover {
-    background: #fb8585;
-}
-
-#simple li a {
-    color: black;
-    display: block;
-    text-decoration: none;
-}
+p{text-align:justify;margin:0;padding:0 0 12px; font-size: 17px;}
 
 
-
-
+h2, h3 { padding-bottom: 5px;     padding-top: 5px;     font-size: 21px;
+    text-align: center;  background-color: #F7C500;   border-style: solid;
+  border-bottom: double #666;     border-top: double;     border-left: 0px;  border-right: 0px;  border-center: 0px;
+     border-radius: 0px;         font-family: "sans;georgia;arial" }
